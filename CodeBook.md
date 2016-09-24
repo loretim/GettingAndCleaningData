@@ -86,7 +86,7 @@ Variables
     tBodyGyroJerkMag-std
     fBodyAcc-mean-X
     fBodyAcc-mean-Y
-    fBodyAcc-mean-Z
+    fBodyAcc-mean-Z 
     fBodyAcc-std-X
     fBodyAcc-std-Y
     fBodyAcc-std-Z
