@@ -35,7 +35,7 @@ Clean the activity names in the second column of activities.
 
 Combine the subject_bind_data, x_bind_data and y_bind_data by column to get a new cleaned 10299x68 data frame, total_data. 
 
-# Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject
+Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 So, after initializing the result data frame and performing the two for-loops, we get a 180x68 data frame.
 Write the result out to "Result.txt" file.
@@ -86,7 +86,7 @@ Variables
     tBodyGyroJerkMag-std
     fBodyAcc-mean-X
     fBodyAcc-mean-Y
-    fBodyAcc-mean-Z 
+    fBodyAcc-mean-Z
     fBodyAcc-std-X
     fBodyAcc-std-Y
     fBodyAcc-std-Z
