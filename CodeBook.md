@@ -20,26 +20,22 @@ and store them in
       x_test, 
       y_test
       subject_test variables
-Concatenate x_test to x_train to generate a 10299x561 data frame, x_data; 
-concatenate y_test to y_train to generate a 10299x1 data frame, y_data; 
-concatenate subject_test to subject_train to generate a 10299x1 data frame, subject_data.
-Read the features.txt file and store the data in a variable called 
-      features. 
-We only extract the measurements on the mean and standard deviation. 
-This results in a 66 indices list. 
-We get a subset of x_data with the 66 corresponding columns.
-Clean the column names of the subset. 
+      
+Concatenate following data set
+   x_test + x_train --> x_bind_data (10299x561 data frame)
+   y_test + y_train --> y_bind_data (10299x1 data frame)
+   subject_test + subject_train --> subject_bind_data (10299x1 data frame)
 
+Read the features.txt file and store the data in a variable called "features"
+Extract only the measurements on the mean and standard deviation (results in a 66 indices list). 
+Get a subset of x_data with the 66 corresponding columns and clean the column names of the subset. 
 
 Read the activity_labels.txt file  and store the data in a variable called activities.
 Clean the activity names in the second column of activities. 
 
+Combine the subject_bind_data, x_bind_data and y_bind_data by column to get a new cleaned 10299x68 data frame, total_data. 
 
-Combine the subject_data, y_data and x_data by column to get a new cleaned 10299x68 data frame, all_data. 
-
-Properly name the first two columns, "subject" and "activity". 
-
-Finally, generate a second independent tidy data set with the average of each measurement for each activity and each subject. 
+# Step 5 - Create a second, independent tidy data set with the average of each variable for each activity and each subject
 
 So, after initializing the result data frame and performing the two for-loops, we get a 180x68 data frame.
 Write the result out to "Result.txt" file.
